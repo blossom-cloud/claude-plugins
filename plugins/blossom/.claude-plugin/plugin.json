@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "blossom",
+  "displayName": "Blossom",
+  "version": "0.2.3",
+  "description": "Deploy Apps and manage Databases on Blossom.",
+  "author": {"name": "BoltOps, LLC", "url": "https://app.blossom88.com/"},
+  "homepage": "https://app.blossom88.com/",
+  "license": "Apache-2.0",
+  "keywords": ["blossom", "deployment", "apps", "databases", "mcp", "cloud"],
+  "icon": "./assets/icon.png",
+  "privacyPolicyUrl": "https://app.blossom88.com/privacy",
+  "termsOfServiceUrl": "https://app.blossom88.com/terms",
+  "supportUrl": "https://app.blossom88.com/support"
+}

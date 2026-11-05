@@ -1,0 +1,26 @@
+name: Validate marketplace
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check catalog, plugin and MCP endpoint
+        env:
+          PLUGIN: "blossom"
+          REPOSITORY: "blossom-cloud/claude-plugins"
+          MCP_URL: "https://mcp.blossom88.com/mcp"
+        run: |
+          set -eu
+          test "$GITHUB_REPOSITORY" = "$REPOSITORY"
+          test "$(ls -A plugins)" = "$PLUGIN"
+          jq -e --arg p "$PLUGIN" '
+            .name == $p and (.plugins | length == 1) and
+            .plugins[0].name == $p and .plugins[0].source == ("./plugins/" + $p)
+          ' .claude-plugin/marketplace.json
+          jq -e --arg p "$PLUGIN" '.name == $p' "plugins/$PLUGIN/.claude-plugin/plugin.json"
+          jq -e --arg p "$PLUGIN" --arg url "$MCP_URL" '
+            .mcpServers == {($p): {"type": "http", "url": $url}}
+          ' "plugins/$PLUGIN/.mcp.json"

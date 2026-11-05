@@ -1,0 +1,15 @@
+{
+  "name": "blossom",
+  "description": "Blossom plugins for Claude: deploy and operate Apps and Data from chat.",
+  "owner": {
+    "name": "BoltOps, LLC"
+  },
+  "plugins": [
+    {
+      "name": "blossom",
+      "source": "./plugins/blossom",
+      "description": "Deploy Apps and manage Databases on Blossom.",
+      "version": "0.2.3"
+    }
+  ]
+}
