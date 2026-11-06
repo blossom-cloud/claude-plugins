@@ -1,8 +1,8 @@
 # Blossom for Claude
 
-Deploy Apps and manage Databases with Blossom from Claude. Ask what's running,
-preview a deployment from your Git repository, deploy it, and find out why a
-deployment failed.
+Deploy, manage, and debug Apps in your cloud or ours.
+
+Deploy your App and get its live URL. See which Apps are running, check Database health, and read logs to find out why a deployment failed. Choose Read only to explore or Full access to deploy and make changes.
 
 ## Claude Code
 
@@ -25,8 +25,8 @@ For tools alone, add the MCP endpoint below as a custom connector.
 
 ## Try asking
 
+- “Deploy my project from its Git repository. Show me what’s running and give me the live URL.”
 - "What's running on Blossom? Make no changes."
-- "Preview deploying github.com/acme/shop on Blossom."
 - "Why did my last deployment fail?"
 
 To deploy deliberately, run `/blossom:deploy [repository or Environment]`.

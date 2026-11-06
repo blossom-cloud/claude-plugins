@@ -1,6 +1,6 @@
 # Blossom for Claude
 
-Deploy Apps and manage Databases on Blossom.
+Deploy, manage, and debug Apps in your cloud or ours.
 
 ## Install on your Mac
 

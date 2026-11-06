@@ -1,6 +1,7 @@
 ---
 name: blossom
-description: See which Blossom Apps are running, preview and deploy changes, and find out why a deployment failed. Check Database health and scale an App as traffic grows.
+description: >-
+  Deploy, manage, and debug Apps in your cloud or ours. Check Database health, read logs, and troubleshoot deployments.
 ---
 
 # Blossom
