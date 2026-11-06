@@ -42,7 +42,8 @@ examples. Each Blossom command is its own tool, such as `app_list` or
 `environment_deploy`. When the host loads tools on demand, search for the
 tool you need and call it directly. When Blossom is also connected in
 claude.ai at this same endpoint, Claude may offer that connector in place of
-the plugin's server; it is the same connection, so use it. Respect the
+the plugin's server. If its catalog groups commands, use the entry point
+returned by help(command: ...) for the requested operation. Respect the
 host's permission prompts and stop if a tool is unavailable.
 
 When previewing a repository, look up its clone URL in `quickstart_list`.

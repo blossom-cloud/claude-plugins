@@ -1,5 +1,5 @@
 {
   "mcpServers": {
-    "blossom": {"type": "http", "url": "https://mcp.blossom88.com/mcp"}
+    "blossom": {"type": "http", "url": "https://mcp.blossom88.com/mcp", "headers": {"X-Blossom-Tool-Catalog": "full"}}
   }
 }

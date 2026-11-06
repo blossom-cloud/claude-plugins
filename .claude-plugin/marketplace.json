@@ -9,7 +9,7 @@
       "name": "blossom",
       "source": "./plugins/blossom",
       "description": "Deploy, manage, and debug Apps in your cloud or ours.",
-      "version": "0.2.4"
+      "version": "0.2.5"
     }
   ]
 }

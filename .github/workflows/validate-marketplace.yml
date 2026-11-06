@@ -22,5 +22,5 @@ jobs:
           ' .claude-plugin/marketplace.json
           jq -e --arg p "$PLUGIN" '.name == $p' "plugins/$PLUGIN/.claude-plugin/plugin.json"
           jq -e --arg p "$PLUGIN" --arg url "$MCP_URL" '
-            .mcpServers == {($p): {"type": "http", "url": $url}}
+            .mcpServers == {($p): {"type": "http", "url": $url, "headers": {"X-Blossom-Tool-Catalog": "full"}}}
           ' "plugins/$PLUGIN/.mcp.json"
