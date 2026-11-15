@@ -1,31 +1,29 @@
 # Blossom for Claude
 
-Deploy, manage, and debug Apps in your cloud or ours.
+Build and deploy apps on Blossom.
 
-Deploy your App and get its live URL. See which Apps are running, check Database health, and read logs to find out why a deployment failed. Choose Read only to explore or Full access to deploy and make changes.
+Deploy apps from Git repositories or Quickstarts, manage Services and Databases, and troubleshoot deployments from chat. See what's running, check health and logs, and get live App URLs. Blossom automatically manages server capacity on Blossom Cloud or in your own cloud account.
 
-## Claude Code
+## Install
 
-With read access to the private marketplace, run
+In Claude Code, add the marketplace and install the plugin:
 
     /plugin marketplace add blossom-cloud/claude-plugins
     /plugin install blossom@blossom
 
 Then open `/mcp`, select Blossom, and sign in with Blossom in your
-browser. Choose Read only to explore, or Full access to deploy and make
-changes.
+browser.
 
-## Claude web and Cowork
+On claude.ai and in Cowork, open **Customize → Plugins**, add the marketplace
+from the GitHub repository `blossom-cloud/claude-plugins`, and select
+**Blossom**. Select **Connect**, then sign in and choose your Account.
 
-In **Customize → Plugins**, add the marketplace from the GitHub repository
-`blossom-cloud/claude-plugins` and select **Blossom**.
-For a private Cowork test, upload the packaged plugin ZIP from the plugin picker.
-Select **Connect** for Blossom, then sign in and choose your Account.
+Choose Read only to explore, or Full access to deploy and make changes.
 For tools alone, add the MCP endpoint below as a custom connector.
 
 ## Try asking
 
-- “Deploy my project from its Git repository. Show me what’s running and give me the live URL.”
+- “Deploy my project from its Git repository. Show me what's running and give me the live URL.”
 - "What's running on Blossom? Make no changes."
 - "Why did my last deployment fail?"
 
@@ -33,5 +31,13 @@ To deploy deliberately, run `/blossom:deploy [repository or Environment]`.
 Claude previews the change, asks you to confirm, deploys, and follows it to a
 live URL.
 
-MCP endpoint: `https://mcp.blossom88.com/mcp`. [Privacy](https://app.blossom88.com/privacy) ·
-[Terms](https://app.blossom88.com/terms) · [Support](https://app.blossom88.com/support)
+## Data
+
+The plugin contains the Blossom skill, the deploy command, and a connection to
+Blossom's hosted MCP server at `https://mcp.blossom88.com/mcp`. It runs no code on your computer
+and stores nothing there. After you sign in, Claude sends each tool request to
+that server, which acts in the Blossom Account you chose with the access you
+granted. Environment variable values stay hidden from chat.
+
+[Privacy](https://app.blossom88.com/privacy) · [Terms](https://app.blossom88.com/terms) ·
+[Support](https://app.blossom88.com/support)

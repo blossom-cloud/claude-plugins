@@ -1,6 +1,6 @@
 {
   "name": "blossom",
-  "description": "Deploy, manage, and debug Apps in your cloud or ours.",
+  "description": "Build and deploy apps on Blossom",
   "owner": {
     "name": "BoltOps, LLC"
   },
@@ -8,8 +8,8 @@
     {
       "name": "blossom",
       "source": "./plugins/blossom",
-      "description": "Deploy, manage, and debug Apps in your cloud or ours.",
-      "version": "0.2.5"
+      "description": "Build and deploy apps on Blossom",
+      "version": "0.2.6"
     }
   ]
 }

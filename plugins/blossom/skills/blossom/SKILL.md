@@ -1,21 +1,20 @@
 ---
 name: blossom
 description: >-
-  Deploy, manage, and debug Apps in your cloud or ours. Check Database health, read logs, and troubleshoot deployments.
+  Build and deploy apps on Blossom. Check Database health, read logs, and troubleshoot deployments.
 ---
 
 # Blossom
 
-Use this plugin’s Blossom MCP connection at `https://mcp.blossom88.com/mcp`.
-Check the connected Account, Environment, and intended resources before making
-changes. A connection alone does not authorize changes to production workloads.
+Use this plugin's Blossom MCP connection at `https://mcp.blossom88.com/mcp`.
+Check the connected Account, Environment, and intended resources before making changes.
 
 ## Connect and discover
 
 1. Discover the tools provided by this plugin in the current chat. Hosts may
    prefix tool names; the names below are Blossom's names within that connection.
-2. Call `help` to discover capabilities, then `whoami` to identify the connected
-   user, Organization, Account, and access. Report the Account before operations.
+2. Call `whoami` to identify the connected user, Organization, Account, and
+   access. Report the Account before operations.
 3. If disconnected, use the host's normal Connect flow. Sign in on Blossom,
    choose the intended Account, and select Read only or Full access for the
    requested work. Do not ask for tokens, passwords, or client secrets in chat.
@@ -30,9 +29,9 @@ the host when a different Account is needed.
 
 ## Use the live contract
 
-Call `help(command: "tool_name")` for the current arguments and examples before
-an unfamiliar action. Tool names map to CLI commands with colons replaced by
-underscores, such as `service_scale` for `service:scale`. Discover returned IDs;
+Read the advertised input schema before an unfamiliar action. Tool names map
+to CLI commands with colons replaced by underscores, such as `service_scale`
+for `service:scale`. Discover returned IDs;
 do not invent them. Fetch all relevant pages when an answer needs a full list,
 and state the Location and pagination limits of a partial inventory.
 
@@ -42,8 +41,7 @@ examples. Each Blossom command is its own tool, such as `app_list` or
 `environment_deploy`. When the host loads tools on demand, search for the
 tool you need and call it directly. When Blossom is also connected in
 claude.ai at this same endpoint, Claude may offer that connector in place of
-the plugin's server. If its catalog groups commands, use the entry point
-returned by help(command: ...) for the requested operation. Respect the
+the plugin's server. Use only tools advertised by that connection. Respect the
 host's permission prompts and stop if a tool is unavailable.
 
 When previewing a repository, look up its clone URL in `quickstart_list`.
@@ -61,9 +59,10 @@ previewed. A preview request ends there.
 - Before deploying, preview the App Plan and explain its Capacity effect.
   Respect the Account's limits and any narrower user budget. Do not increase
   capacity limits, deploy production, or modify billing to make a test pass.
-- Destructive tools require the person's confirmation of the target and
-  effect before sending `yes: true`. When the schema requires `confirm`, use
-  the exact confirmed name. Do not supply confirmation merely to bypass an
+- Destructive tools include updates that overwrite existing configuration,
+  such as Services, variables, domains and Git sources. They require the
+  person's confirmation of the target and effect before sending `yes: true`.
+  When the schema requires `confirm`, use the exact confirmed name. Do not supply confirmation merely to bypass an
   error. Existing explicit authorization for that exact action is sufficient.
 - Follow returned Activity IDs with bounded `activity_wait` calls. An accepted
   request is not a completed change. Inspect failures with `activity_show`
