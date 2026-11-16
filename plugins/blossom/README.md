@@ -23,13 +23,15 @@ For tools alone, add the MCP endpoint below as a custom connector.
 
 ## Try asking
 
+- “Who am I? Which Blossom Organization and Account am I connected to?”
+- “Show me all my Apps and their Environments.”
+- “Deploy the Sinatra Quickstart and show me the URL.”
 - “Deploy my project from its Git repository. Show me what's running and give me the live URL.”
-- "What's running on Blossom? Make no changes."
-- "Why did my last deployment fail?"
 
-To deploy deliberately, run `/blossom:deploy [repository or Environment]`.
-Claude previews the change, asks you to confirm, deploys, and follows it to a
-live URL.
+To deploy a repository directly, run `/blossom:deploy` with its URL, such as
+`/blossom:deploy https://github.com/blossom-examples/python-fastapi`. Claude
+previews the change, asks you to confirm, deploys, and follows it to a live
+URL. The command also takes an existing Environment.
 
 ## Data
 
