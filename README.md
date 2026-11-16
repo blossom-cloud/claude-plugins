@@ -1,6 +1,6 @@
 # Blossom for Claude
 
-Build and deploy apps on Blossom
+Deploy apps from a Git repository, see what's running, and manage Services and Databases from chat
 
 ## Install on your Mac
 

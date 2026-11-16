@@ -3,7 +3,7 @@
   "name": "blossom",
   "displayName": "Blossom",
   "version": "1.0.0",
-  "description": "Build and deploy apps on Blossom",
+  "description": "Deploy apps from a Git repository, see what's running, and manage Services and Databases from chat",
   "author": {"name": "BoltOps, LLC", "url": "https://app.blossom88.com/"},
   "homepage": "https://app.blossom88.com/",
   "license": "Apache-2.0",

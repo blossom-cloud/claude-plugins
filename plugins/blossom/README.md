@@ -1,6 +1,6 @@
 # Blossom for Claude
 
-Build and deploy apps on Blossom.
+Deploy apps from a Git repository, see what's running, and manage Services and Databases from chat.
 
 Deploy apps from Git repositories or Quickstarts, manage Services and Databases, and troubleshoot deployments from chat. See what's running, check health and logs, and get live App URLs. Blossom automatically manages server capacity on Blossom Cloud or in your own cloud account.
 

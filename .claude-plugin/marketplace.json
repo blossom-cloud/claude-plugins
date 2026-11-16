@@ -1,6 +1,6 @@
 {
   "name": "blossom",
-  "description": "Build and deploy apps on Blossom",
+  "description": "Deploy apps from a Git repository, see what's running, and manage Services and Databases from chat",
   "owner": {
     "name": "BoltOps, LLC"
   },
@@ -8,7 +8,7 @@
     {
       "name": "blossom",
       "source": "./plugins/blossom",
-      "description": "Build and deploy apps on Blossom",
+      "description": "Deploy apps from a Git repository, see what's running, and manage Services and Databases from chat",
       "version": "1.0.0"
     }
   ]
