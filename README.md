@@ -1,4 +1,4 @@
-# Blossom for Claude and Factory Droid
+# Blossom for Claude
 
 Build and deploy apps on Blossom
 
@@ -14,16 +14,6 @@ repository** and enter `blossom-cloud/claude-plugins`. Select
     /plugin install blossom@blossom
 
 Open `/mcp`, select Blossom, and sign in.
-
-## Install in Factory Droid
-
-    droid plugin marketplace add blossom-cloud/claude-plugins
-    droid plugin install blossom@claude-plugins --scope user
-    droid mcp auth
-    droid mcp list
-
-Choose your Blossom Account in the browser, then look for `blossom`
-marked **connected (authenticated)**.
 
 [Plugin usage](plugins/blossom/README.md)
 
