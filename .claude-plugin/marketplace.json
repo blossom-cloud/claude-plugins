@@ -9,7 +9,7 @@
       "name": "blossom",
       "source": "./plugins/blossom",
       "description": "Build and deploy apps on Blossom",
-      "version": "0.2.6"
+      "version": "1.0.0"
     }
   ]
 }
