@@ -19,4 +19,4 @@ Open `/mcp`, select Blossom, and sign in.
 
 This repository is generated from Blossom's plugin source.
 
-© 2026 BoltOps, LLC. Licensed under the Apache License 2.0.
+© BoltOps, LLC. Licensed under the Apache License 2.0.
