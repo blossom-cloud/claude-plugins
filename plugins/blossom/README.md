@@ -41,5 +41,5 @@ and stores nothing there. After you sign in, Claude sends each tool request to
 that server, which acts in the Blossom Account you chose with the access you
 granted. Environment variable values stay hidden from chat.
 
-[Privacy](https://app.blossom88.com/privacy) · [Terms](https://app.blossom88.com/terms) ·
-[Support](https://app.blossom88.com/support)
+[Privacy](https://blossom88.com/privacy) · [Terms](https://blossom88.com/terms) ·
+[Support](https://blossom88.com/support)
