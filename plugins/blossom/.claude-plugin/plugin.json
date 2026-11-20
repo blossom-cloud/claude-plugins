@@ -4,12 +4,12 @@
   "displayName": "Blossom",
   "version": "1.0.0",
   "description": "Deploy apps from a Git repository, see what's running, and manage Services and Databases from chat",
-  "author": {"name": "BoltOps, LLC", "url": "https://app.blossom88.com/"},
-  "homepage": "https://app.blossom88.com/",
+  "author": {"name": "BoltOps, LLC", "url": "https://blossom88.com/"},
+  "homepage": "https://blossom88.com/",
   "license": "Apache-2.0",
   "keywords": ["blossom", "deployment", "apps", "databases", "mcp", "cloud"],
   "icon": "./assets/icon.png",
-  "privacyPolicyUrl": "https://app.blossom88.com/privacy",
-  "termsOfServiceUrl": "https://app.blossom88.com/terms",
-  "supportUrl": "https://app.blossom88.com/support"
+  "privacyPolicyUrl": "https://blossom88.com/privacy",
+  "termsOfServiceUrl": "https://blossom88.com/terms",
+  "supportUrl": "https://blossom88.com/support"
 }
