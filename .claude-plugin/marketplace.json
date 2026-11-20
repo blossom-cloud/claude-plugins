@@ -9,7 +9,7 @@
       "name": "blossom",
       "source": "./plugins/blossom",
       "description": "Deploy apps from a Git repository, see what's running, and manage Services and Databases from chat",
-      "version": "1.0.1"
+      "version": "1.0.0"
     }
   ]
 }
