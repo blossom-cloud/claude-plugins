@@ -44,7 +44,8 @@ claude.ai at this same endpoint, Claude may offer that connector in place of
 the plugin's server. Use only tools advertised by that connection. Respect the
 host's permission prompts and stop if a tool is unavailable.
 
-When previewing a repository, look up its clone URL in `quickstart_list`.
+When previewing a repository, look for its clone URL with `catalog_list`
+filtered to kind quickstart.
 Match the owner, repository and subfolder. If several examples share the
 repository, ask which one. Pass the matching `quickstart` key to
 `app_plan_preview` and let Blossom supply the defaults. For other repos,

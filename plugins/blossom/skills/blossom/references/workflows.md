@@ -24,7 +24,8 @@ diagnosis request alone does not authorize rollback, restart, or redeploy.
 ## Preview and deploy
 
 Collect the Git repository, intended Location, Environment, and required
-Services. `quickstart_list` can supply an existing starting point. Consult
+Services. Use `catalog_list` to find apps or filter to `kind: quickstart` to
+choose an App Plan starter. `catalog_show` gives its guide and deploy prompt. Consult
 the `app_plan_preview` input schema, construct the plan, then preview it without
 saving. Summarize resources and Capacity effect. Stop after the preview if
 that is all the user requested.

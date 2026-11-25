@@ -13,7 +13,7 @@ Follow the Blossom skill in this plugin, including its rules for changes.
    access.
 2. Resolve the target from $ARGUMENTS:
    - A Git repository, or nothing in a project with a Git remote: match the repository
-     and subfolder in `quickstart_list` as described in the Blossom skill.
+     and subfolder with `catalog_list` filtered to kind quickstart.
      Preview the matching key or the custom repository configuration using
      `app_plan_preview`. Identify any assumptions before seeking approval.
    - An existing Environment: inspect it with `environment_show` and
